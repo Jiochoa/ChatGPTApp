@@ -54,6 +54,7 @@ import java.util.Map;
 public class MainActivity extends AppCompatActivity {
     private String theKey = "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";
     //    TextView resultTV;
+    // test comment
     EditText editText;
     ImageButton sendBtn,micBtn;
     MessagesList messagesList;
