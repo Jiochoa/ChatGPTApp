@@ -50,9 +50,9 @@ import java.util.HashMap;
 import java.util.Locale;
 import java.util.Map;
 
-// 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
+
 public class MainActivity extends AppCompatActivity {
-    private String theKey = "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";
+    private String theKey = "";
     //    TextView resultTV;
     // test comment
     EditText editText;
