@@ -11,6 +11,7 @@ public class User implements IUser {
         this.avatar = avatar;
     }
 
+
     @Override
     public String getId() {
         return id;
