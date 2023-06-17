@@ -23,7 +23,7 @@ import java.util.Map;
 
 public class ChatGPTManager {
     private MainActivity mainActivity;
-    private String apiKey = "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";
+    private String apiKey = "";
     private String imageUrl = "https://api.openai.com/v1/images/generations";
     private String textUrl = "https://api.openai.com/v1/chat/completions";
     private Context context;
