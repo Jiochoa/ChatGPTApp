@@ -32,6 +32,7 @@
             android:layout_margin="7dp"
             android:background="@android:color/transparent"
             app:srcCompat="@drawable/baseline_mic_24" />
+
     </androidx.cardview.widget.CardView>
 
 
@@ -65,7 +66,7 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <EditText
-            android:id="@+id/editTextText"
+            android:id="@+id/promptText"
             android:layout_width="match_parent"
             android:layout_height="45dp"
             android:layout_margin="7dp"
@@ -73,5 +74,9 @@
             android:ems="10"
             android:inputType="text" />
     </androidx.cardview.widget.CardView>
+
+<!--    <androidx.appcompat.app.AppCompatActivity-->
+<!--        xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--        xmlns:tools="http://schemas.android.com/tools" />-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

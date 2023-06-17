@@ -2,9 +2,15 @@
 <menu xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
+<!--    <item-->
+<!--        android:id="@+id/voice"-->
+<!--        android:icon="@drawable/baseline_voice_over_off_24"-->
+<!--        android:title="Item"-->
+<!--        app:showAsAction="always" />-->
+
     <item
         android:id="@+id/voice"
-        android:icon="@drawable/baseline_voice_over_off_24"
-        android:title="Item"
-        app:showAsAction="always" />
+        android:title="Voice"
+        android:icon="@drawable/baseline_record_voice_over_24"
+        app:showAsAction="ifRoom" />
 </menu>

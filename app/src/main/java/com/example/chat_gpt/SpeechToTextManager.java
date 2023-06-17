@@ -71,7 +71,7 @@ public class SpeechToTextManager {
             public void onResults(Bundle bundle) {
                 ArrayList<String> data = bundle.getStringArrayList(SpeechRecognizer.RESULTS_RECOGNITION);
                 String prompt = data.get(0);
-                mainActivity.processPrompts(prompt);
+                mainActivity.processUserInput(prompt);
 
             }
 

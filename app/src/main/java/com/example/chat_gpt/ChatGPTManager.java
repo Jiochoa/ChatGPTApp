@@ -23,7 +23,7 @@ import java.util.Map;
 
 public class ChatGPTManager {
     private MainActivity mainActivity;
-    private String apiKey = "";
+    private String apiKey = "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";
     private String imageUrl = "https://api.openai.com/v1/images/generations";
     private String textUrl = "https://api.openai.com/v1/chat/completions";
     private Context context;
@@ -152,10 +152,8 @@ public class ChatGPTManager {
             JSONArray choicesArray = response.getJSONArray("choices");
             JSONObject firstChoice = choicesArray.getJSONObject(0);
             JSONObject message = firstChoice.getJSONObject("message");
-//            return message.getString("content");
-//            textAnswer = message.getString("content");
             String ans = message.getString("content");
-            mainActivity.processTextResponse(ans);
+            mainActivity.displayTextResponse(ans);
 
 
         } catch (JSONException e) {
@@ -173,7 +171,7 @@ public class ChatGPTManager {
                 answer = dataArray.getJSONObject(i).getString("url");
                 imagesAnswer.add(answer);
             }
-            mainActivity.processImagesResponse(imagesAnswer);
+            mainActivity.displayImagesResponse(imagesAnswer);
             imagesAnswer = new ArrayList<>();
 
         } catch (JSONException e) {
